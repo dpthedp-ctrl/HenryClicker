@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Scratch Game</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-color: #111116;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            padding: 15px;
+            font-family: system-ui, -apple-system, sans-serif;
+        }
+
+        .game-wrapper {
+            background-color: #000000;
+            padding: 10px;
+            border-radius: 12px;
+            box-shadow: 0 12px 36px rgba(0, 0, 0, 0.5);
+            max-width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        iframe {
+            display: block;
+            border: none;
+            border-radius: 6px;
+            max-width: 100%;
+        }
+
+        /* Responsive scaling for smaller screens */
+        @media (max-width: 520px) {
+            .game-wrapper {
+                padding: 4px;
+                border-radius: 8px;
+            }
+            iframe {
+                width: 100% !important;
+                height: auto !important;
+                aspect-ratio: 482 / 393;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="game-wrapper">
+        <iframe 
+            src="https://forkphorus.github.io/embed.html?id=1278856834&auto-start=true&light-content=false" 
+            width="482" 
+            height="393" 
+            allowfullscreen="true" 
+            allowtransparency="true">
+        </iframe>
+    </div>
+
+</body>
+</html>
